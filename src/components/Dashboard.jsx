@@ -35,7 +35,7 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <header className="flex justify-between items-center rounded-lg">
+      <header className="flex justify-between items-center rounded-lg px-4">
         <h1 className="text-2xl text-black font-bold">Dashboard</h1>
         <button
           onClick={handleLogout}
@@ -48,14 +48,14 @@ const Dashboard = () => {
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* User Information ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold">User Information</h2>
+          <h2 className="text-xl font-semibold">User Info</h2>
           <p className="mt-2">Name: {userData.name}</p>
           <p>Email: {userData.email}</p>
         </div>
 
         {/* Statistics Summary ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold">Statistics Summary</h2>
+          <h2 className="text-xl font-semibold">Statistics</h2>
           <p className="mt-2">Total Expenses: ${totalExpenses}</p>
           <p>Number of Transactions: {expenses.length}</p>
         </div>
@@ -64,7 +64,7 @@ const Dashboard = () => {
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Bar Chart ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-lg font-semibold">Expenses Bar Chart</h3>
+          <h3 className="text-lg font-semibold mb-2">Expenses Bar Chart</h3>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={expenses}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -79,9 +79,7 @@ const Dashboard = () => {
 
         {/* Line Chart ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-lg font-semibold">
-            Cumulative Expenses Line Chart
-          </h3>
+          <h3 className="text-lg font-semibold mb-2">Expenses Line Chart</h3>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={expenses}>
               <CartesianGrid strokeDasharray="3 3" />
