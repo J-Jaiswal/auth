@@ -9,8 +9,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Placeholder login logic (replace with real logic)
-    if (email === "user@example.com" && password === "password") {
+    if (email === "jayesh@example.com" && password === "password") {
       navigate("/dashboard");
     } else {
       alert("Invalid credentials!");
@@ -28,7 +27,7 @@ const Login = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 border rounded-lg   "
               placeholder="Enter your email"
             />
           </div>
@@ -39,7 +38,7 @@ const Login = () => {
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border rounded-lg "
                 placeholder="Enter your password"
               />
               <button
@@ -60,7 +59,7 @@ const Login = () => {
         </form>
         <p className="text-sm text-center">
           Don't have an account?{" "}
-          <Link to="/signup" className="text-blue-500">
+          <Link to="/signup" className="text-[#243642]  underline">
             Sign up
           </Link>
         </p>

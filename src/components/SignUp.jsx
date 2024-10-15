@@ -26,7 +26,7 @@ const Signup = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 border rounded-lg "
               placeholder="Enter your name"
             />
           </div>
@@ -36,7 +36,7 @@ const Signup = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 border rounded-lg "
               placeholder="Enter your email"
             />
           </div>
@@ -47,7 +47,7 @@ const Signup = () => {
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border rounded-lg "
                 placeholder="Create a password"
               />
               <button
@@ -68,7 +68,7 @@ const Signup = () => {
         </form>
         <p className="text-sm text-center">
           Already have an account?{" "}
-          <Link to="/login" className="text-blue-500">
+          <Link to="/login" className="text-[#243642] underline">
             Login
           </Link>
         </p>

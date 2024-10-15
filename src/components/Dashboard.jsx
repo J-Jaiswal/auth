@@ -15,23 +15,16 @@ import {
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const [userData] = useState({ name: "John Doe", email: "user@example.com" });
-  // const [expenses, setExpenses] = useState([]);
+  const [userData] = useState({
+    name: "Jayesh Jaiswal",
+    email: "user@example.com",
+  });
 
   const expenses = [
     { date: "2024-10-01", amount: 150 },
     { date: "2024-10-05", amount: 200 },
     { date: "2024-10-10", amount: 300 },
   ];
-
-  // useEffect(() => {
-  //   const mockExpenses = [
-  //     { date: "2024-10-01", amount: 150 },
-  //     { date: "2024-10-05", amount: 200 },
-  //     { date: "2024-10-10", amount: 300 },
-  //   ];
-  //   setExpenses(mockExpenses);
-  // }, []);
 
   const handleLogout = () => {
     alert("You have been logged out!");
@@ -53,14 +46,14 @@ const Dashboard = () => {
       </header>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* User Information */}
+        {/* User Information ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold">User Information</h2>
           <p className="mt-2">Name: {userData.name}</p>
           <p>Email: {userData.email}</p>
         </div>
 
-        {/* Statistics Summary */}
+        {/* Statistics Summary ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold">Statistics Summary</h2>
           <p className="mt-2">Total Expenses: ${totalExpenses}</p>
@@ -68,9 +61,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Charts Section */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* <div className="flex flex-wrap w-full gap-4"> */}
         {/* Bar Chart ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-lg font-semibold">Expenses Bar Chart</h3>
