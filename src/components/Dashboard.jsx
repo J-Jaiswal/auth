@@ -17,7 +17,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [userData] = useState({
     name: "Jayesh Jaiswal",
-    email: "user@example.com",
+    email: "jay@example.com",
   });
 
   const expenses = [

@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email === "jayesh@example.com" && password === "password") {
+    if (email === "jay@example.com" && password === "password") {
       navigate("/dashboard");
     } else {
       alert("Invalid credentials!");
