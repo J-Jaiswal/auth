@@ -35,7 +35,7 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <header className="flex justify-between items-center rounded-lg px-4">
+      <header className="flex justify-between items-center rounded-lg px-16">
         <h1 className="text-2xl text-black font-bold">Dashboard</h1>
         <button
           onClick={handleLogout}
@@ -45,7 +45,7 @@ const Dashboard = () => {
         </button>
       </header>
 
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 px-12">
         {/* User Information ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold">User Info</h2>
@@ -61,7 +61,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 px-12">
         {/* Bar Chart ----> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-lg font-semibold mb-2">Expenses Bar Chart</h3>
@@ -72,7 +72,7 @@ const Dashboard = () => {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="amount" fill="#8884d8" />
+              <Bar dataKey="amount" fill="#629584" />
             </BarChart>
           </ResponsiveContainer>
         </div>
